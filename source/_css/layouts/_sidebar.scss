@@ -1,6 +1,8 @@
 // Global CSS rules for all screen size
 #sidebar {
     font-family:        map-get($font-families, 'sidebar');
+    font-weight:        $sidebar-font-weight;
+    text-shadow:        1px 1px 6px #000000;
     height:             100%;
     position:           fixed;
     top:                0;
@@ -29,7 +31,7 @@
             margin:  0 auto;
         }
         .sidebar-profile-name {
-            font-size: 1.1em;
+            font-size: 1.4em;
             color:     map-get($sidebar, color);
         }
     }

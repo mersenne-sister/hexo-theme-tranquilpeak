@@ -51,6 +51,7 @@
     }
     .header-title {
         text-align:  center;
+        font-family: map-get($font-families, 'headings');
         font-size:   $font-size-base;
         line-height: 55px;
         margin:      0;

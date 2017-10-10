@@ -2,34 +2,37 @@
 // --------------------------------------------
 
 // Font families
-$open-sans:            'Open Sans';
-$open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
-$monospace:             Menlo, Consolas, monospace;
+$open-sans:             -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$open-sans-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$cinzel-serif:          "Cinzel Decorative", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "游明朝", "Yu Mincho", cursive, serif;
+$monospace:             Consolas, "Liberation Mono", Menlo, Courier, monospace;
 
 $font-family-base: $open-sans-sans-serif;
 
 $font-families: (
    // base
-   'headings':          $open-sans-sans-serif,
+   'headings':          $cinzel-serif,
    // components
    'code':              $monospace,
-   'caption':           $merriweather-serif,
-   'image-gallery':     $open-sans,
-   'post-header-cover': $merriweather-serif,
+   'caption':           $open-sans-sans-serif,
+   'image-gallery':     $open-sans-sans-serif,
+   'post-header-cover': $open-sans-sans-serif,
    'post-meta':         $open-sans-sans-serif,
-   'post-content':      $merriweather-serif,
+   'post-content':      $open-sans-sans-serif,
    'post-excerpt-link': $open-sans-sans-serif,
    'highlight':         $monospace,
    // layout
-   'sidebar':           $open-sans-sans-serif
+   'sidebar':           $cinzel-serif
 );
+
+$sidebar-font-weight: bold;
 
 // equal to 15px
 $font-size-base:      1.6rem;
 $font-color-base:     #5d686f;
 $line-height-base:    1.9em;
-$letter-spacing-base: 0.01em;
+$letter-spacing-base: 0;
+$letter-spacing-title: 0;
 
 // Reduction of font size base on small screen and down
 $font-size-base-sm-screen-reduction-factor: 0.1rem;
@@ -68,7 +71,6 @@ $z-indexes: (
     'c-post-header-cover': 15,
     'l-header':            20,
     'l-sidebar':           20,
-    'l-about':             30,
     'c-mask':              30,
     'c-post-bottom-bar':   40,
     'c-share-options-bar': 50,
@@ -130,11 +132,6 @@ $headings-font-size-md-screen-reduction-factor: 0.15rem;
 // Layout settings
 // Files are located in `layout` folder
 // --------------------------------------------
-
-// Main
-$about: (
-    'background': rgba(17, 26, 35, 0),
-);
 
 // Header
 $header:(
